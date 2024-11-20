@@ -1,22 +1,14 @@
-import "./App.css";
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="App">
+      <section className="sefirot-container">
+        <div className="sefirot sefirot-major">
+          <div className="sefirot sefirot-middle">
+            <div className="sefirot sefirot-final"></div>
+          </div>
+        </div>
+      </section>
+    </section>
   );
 }
 
