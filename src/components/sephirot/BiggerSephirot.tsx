@@ -61,7 +61,7 @@ function BiggerSephirot({ world, regent, sephirot, planet }: SephirotProps) {
         />
         <path
           id="path-7"
-          d="M 173.594 353.507 C 250.636 403.434 334.412 376.447 351.783 341.311"
+          d="M 173.594 353.507 C 250.636 393 334.412 376.447 355.783 305.311"
           style={{ fill: 'none' }}
         />
         <path
@@ -175,11 +175,10 @@ function BiggerSephirot({ world, regent, sephirot, planet }: SephirotProps) {
           fontFamily: 'Arial, sans-serif',
           fontSize: '21px',
           letterSpacing: '4.3px',
-          whiteSpace: 'pre',
           transformBox: 'fill-box',
-          transformOrigin: '85.6939px 26.7757px',
+          transformOrigin: 'center center',
+          transform: 'none',
         }}
-        transform="matrix(0.999391, -0.034899, 0.034899, 0.999391, -4.77647, -6.656395)"
       >
         <textPath href="#path-7">{sephirot?.valor}</textPath>
       </text>
