@@ -1,6 +1,6 @@
 # Interactive Kaballah
 
-<img width="835" alt="Screen Shot 2024-11-28 at 23 51 06" src="https://github.com/user-attachments/assets/34223f31-9c0d-45bb-a5cc-a6c26f99c4fb">
+<img width="1238" alt="Screen Shot 2024-11-29 at 14 51 41" src="https://github.com/user-attachments/assets/50529de5-3d71-4621-8b4a-019373a378b9">
 
 
 ## In Progress
