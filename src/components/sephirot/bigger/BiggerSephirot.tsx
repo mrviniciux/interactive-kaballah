@@ -166,7 +166,7 @@ function BiggerSephirot({ world, regent, sephirot, planet }: SephirotProps) {
       >
         {
           // prettier-ignore
-          <textPath href="#text-path-0">{sephirot?.name}</textPath>
+          <textPath href="#text-path-0">{sephirot.name}</textPath>
         }
       </text>
       <text
@@ -180,7 +180,7 @@ function BiggerSephirot({ world, regent, sephirot, planet }: SephirotProps) {
           transform: 'none',
         }}
       >
-        <textPath href="#path-7">{sephirot?.valor}</textPath>
+        <textPath href="#path-7">{sephirot.valor}</textPath>
       </text>
       <text
         style={{
