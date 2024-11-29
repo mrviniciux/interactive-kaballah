@@ -76,7 +76,12 @@ function Sephirot({ regent, sephirot, planet }: SephirotProps<'simple'>) {
         }}
         transform="matrix(1, 0, 0, 1, 147.055893, -96.238663)"
       >
-        <textPath href="#text-path-0">{sephirot.name}</textPath>
+        <textPath
+          href="#text-path-0"
+          startOffset={sephirot.startOffset?.name || 0}
+        >
+          {sephirot.name}
+        </textPath>
       </text>
       <text
         style={{
@@ -87,7 +92,9 @@ function Sephirot({ regent, sephirot, planet }: SephirotProps<'simple'>) {
         }}
         transform="matrix(1, 0.007, 0.007, 1.002, -2, 15)"
       >
-        <textPath href="#path-7">{sephirot.valor}</textPath>
+        <textPath href="#path-7" startOffset={sephirot.startOffset?.valor || 0}>
+          {sephirot.valor}
+        </textPath>
       </text>
       <text
         style={{
@@ -100,7 +107,9 @@ function Sephirot({ regent, sephirot, planet }: SephirotProps<'simple'>) {
         }}
         transform="matrix(1, 0, 0, 1, 142.807053, -161.571259)"
       >
-        <textPath href="#path-8">{regent.title}</textPath>
+        <textPath href="#path-8" startOffset={regent.startOffset?.title || 0}>
+          {regent.title}
+        </textPath>
       </text>
       <text
         style={{
@@ -113,7 +122,9 @@ function Sephirot({ regent, sephirot, planet }: SephirotProps<'simple'>) {
         }}
         transform="matrix(0.573576, 0.819153, -0.819153, 0.573576, -149.807556, -6.855417)"
       >
-        <textPath href="#path-9">{regent.name}</textPath>
+        <textPath href="#path-9" startOffset={regent.startOffset?.name || 0}>
+          {regent.name}
+        </textPath>
       </text>
       <text
         style={{
@@ -126,7 +137,9 @@ function Sephirot({ regent, sephirot, planet }: SephirotProps<'simple'>) {
         }}
         transform="matrix(0.515039, -0.857168, 0.857168, 0.515039, 139.41655, 1.894234)"
       >
-        <textPath href="#path-10">{regent.defect}</textPath>
+        <textPath href="#path-10" startOffset={regent.startOffset?.defect || 0}>
+          {regent.defect}
+        </textPath>
       </text>
     </svg>
   );

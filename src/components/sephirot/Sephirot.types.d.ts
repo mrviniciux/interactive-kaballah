@@ -1,39 +1,42 @@
-type Theming = {
+type Theming<T = World | Regent | Sephirot> = {
   backgroundColor?: string;
   fontColor?: string;
   strokeColor?: string;
+  startOffset?: Partial<T>;
+};
+
+type World = {
+  title: string; //above
+  aspect: string; //below
 };
 
 type Regent = {
   title: string; //above
   name: string;
   defect?: string;
-} & Theming;
+};
 
 type Sephirot = {
   name: string;
   valor: string;
-} & Theming;
+};
 
 type Planet = {
   icon?: string | ReactElement;
   number: number;
-} & Theming;
+};
 
 export type SimpleSephirot = {
-  regent: Regent;
-  sephirot: Sephirot;
-  planet: Planet;
+  regent: Regent & Theming<Regent>;
+  sephirot: Sephirot & Theming<Sephirot>;
+  planet: Planet & Theming;
 };
 
 export type BiggerSephirot = {
-  world: {
-    title: string; //above
-    aspect: string; //below
-  } & Theming;
-  regent: Regent;
-  sephirot: Sephirot;
-  planet: Planet;
+  world: World & Theming<World>;
+  regent: Regent & Theming<Regent>;
+  sephirot: Sephirot & Theming<Sephirot>;
+  planet: Planet & Theming<Planet>;
 };
 
 export type SephirotProps<T extends 'simple' | 'bigger'> = T extends 'simple'

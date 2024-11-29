@@ -139,7 +139,7 @@ function BiggerSephirot({
       >
         {
           // prettier-ignore
-          <textPath href="#text-path-0">{sephirot.name}</textPath>
+          <textPath href="#text-path-0" startOffset={sephirot.startOffset?.name}>{sephirot.name}</textPath>
         }
       </text>
       <text
@@ -153,7 +153,9 @@ function BiggerSephirot({
           transform: 'none',
         }}
       >
-        <textPath href="#path-7">{sephirot.valor}</textPath>
+        <textPath href="#path-7" startOffset={sephirot.startOffset?.valor}>
+          {sephirot.valor}
+        </textPath>
       </text>
       <text
         style={{
@@ -166,7 +168,9 @@ function BiggerSephirot({
         }}
         transform="matrix(1, 0, 0, 1, 142.807053, -161.571259)"
       >
-        <textPath href="#path-8">{world.title}</textPath>
+        <textPath href="#path-8" startOffset={world.startOffset?.title}>
+          {world.title}
+        </textPath>
       </text>
       <text
         style={{
@@ -181,7 +185,7 @@ function BiggerSephirot({
       >
         {
           // prettier-ignore
-          <textPath href="#path-12">{world.aspect}</textPath>
+          <textPath href="#path-12" startOffset={world.startOffset?.aspect}>{world.aspect}</textPath>
         }
       </text>
       <text
@@ -197,7 +201,7 @@ function BiggerSephirot({
       >
         {
           // prettier-ignore
-          <textPath href="#path-11">{regent.title}</textPath>
+          <textPath href="#path-11" startOffset={regent.startOffset?.title}>{regent.title}</textPath>
         }
       </text>
       <text
@@ -211,7 +215,9 @@ function BiggerSephirot({
         }}
         transform="matrix(0.601815, 0.798636, -0.798636, 0.601815, -109.637955, -26.001652)"
       >
-        <textPath href="#path-9">{regent.name}</textPath>
+        <textPath href="#path-9" startOffset={regent.startOffset?.name}>
+          {regent.name}
+        </textPath>
       </text>
       <text
         style={{
@@ -225,7 +231,9 @@ function BiggerSephirot({
         transform="matrix(0.515039, -0.857168, 0.857168, 0.515039, 110.708572, -32.951153)"
         id="object-0"
       >
-        <textPath href="#path-10">{regent?.defect}</textPath>
+        <textPath href="#path-10" startOffset={regent.startOffset?.defect}>
+          {regent?.defect}
+        </textPath>
       </text>
     </svg>
   );
