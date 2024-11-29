@@ -1,5 +1,4 @@
-import BiggerSephirot from '../components/Sephirot/bigger/BiggerSephirot';
-import Sephirot from '../components/Sephirot/Sephirot';
+import Sephirot, { BiggerSephirot } from '../components/Sephirot';
 import PageUnderConstruction from '../components/UnderConstruction/UnderConstruction';
 
 function App() {
