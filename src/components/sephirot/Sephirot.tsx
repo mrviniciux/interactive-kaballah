@@ -1,31 +1,6 @@
-import { ReactElement } from 'react';
+import { SephirotProps } from './Sephirot.types';
 
-type SephirotProps = {
-  regent: {
-    title: string; //above
-    name: string;
-    defect?: string;
-    backgroundColor?: string;
-    fontColor?: string;
-    strokeColor?: string;
-  };
-  sephirot: {
-    name: string;
-    valor: string;
-    backgroundColor?: string;
-    fontColor?: string;
-    strokeColor?: string;
-  };
-  planet: {
-    icon?: string | ReactElement;
-    number: number;
-    backgroundColor?: string;
-    fontColor?: string;
-    strokeColor?: string;
-  };
-};
-
-function Sephirot({ regent, sephirot, planet }: SephirotProps) {
+function Sephirot({ regent, sephirot, planet }: SephirotProps<'simple'>) {
   return (
     <svg viewBox="0 0 500 500" width="500px" height="500px">
       <ellipse
