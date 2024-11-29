@@ -95,6 +95,8 @@ function BiggerSephirot({
       </ellipse>
       <ellipse
         fill={planet.backgroundColor}
+        strokeWidth={'1px'}
+        stroke={planet.strokeColor || 'white'}
         cx="251.6"
         cy="250.4"
         rx="100"
@@ -113,7 +115,7 @@ function BiggerSephirot({
         y="277"
         transform="matrix(1.835666, 0, 0, 1.510414, -218.867828, -146.72612)"
       >
-        ♄
+        {planet.icon}
       </text>
       <text
         style={{
