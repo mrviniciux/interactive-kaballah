@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Interactive Kaballah
+
+<img width="835" alt="Screen Shot 2024-11-28 at 23 51 06" src="https://github.com/user-attachments/assets/34223f31-9c0d-45bb-a5cc-a6c26f99c4fb">
+
+
+## In Progress
+
+* Still building sephirot as component
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
