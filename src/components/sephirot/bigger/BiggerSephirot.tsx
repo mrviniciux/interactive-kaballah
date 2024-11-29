@@ -62,6 +62,7 @@ function BiggerSephirot({
       </defs>
       <ellipse
         fill={world.backgroundColor || 'rgb(217, 217, 217)'}
+        strokeWidth="3px"
         stroke="black"
         cx="251.627"
         cy="250.432"
@@ -73,6 +74,7 @@ function BiggerSephirot({
       <ellipse
         fill={regent.backgroundColor || 'rgb(73, 73, 73)'}
         stroke={regent.strokeColor || 'white'}
+        strokeWidth={'5px'}
         cx="249.865"
         cy="247.141"
         rx="175"
@@ -82,6 +84,8 @@ function BiggerSephirot({
       </ellipse>
       <ellipse
         fill={sephirot.backgroundColor}
+        strokeWidth={'5px'}
+        stroke={regent.strokeColor || 'white'}
         cx="249.9"
         cy="247.1"
         rx="140"

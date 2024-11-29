@@ -7,6 +7,7 @@ function Sephirot({ regent, sephirot, planet }: SephirotProps<'simple'>) {
         style={{
           fill: regent.backgroundColor || 'rgb(216, 216, 216)',
           stroke: regent.strokeColor || 'rgb(0, 0, 0)',
+          strokeWidth: '12px',
         }}
         cx="251.627"
         cy="250.432"
@@ -17,6 +18,7 @@ function Sephirot({ regent, sephirot, planet }: SephirotProps<'simple'>) {
         style={{
           fill: sephirot.backgroundColor || 'rgb(216, 216, 216)',
           stroke: sephirot.strokeColor || 'rgb(0, 0, 0)',
+          strokeWidth: '12px',
         }}
         cx="249.865"
         cy="247.141"
