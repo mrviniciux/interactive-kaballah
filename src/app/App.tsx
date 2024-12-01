@@ -112,9 +112,7 @@ const App = () => {
         setInitialPinchDistance(dist);
       } else {
         const scaleChange = dist / initialPinchDistance;
-        setScale((prevScale) =>
-          Math.min(Math.max(0.5, initialScale * scaleChange), 3)
-        );
+        setScale(() => Math.min(Math.max(0.5, initialScale * scaleChange), 3));
       }
     }
   };
