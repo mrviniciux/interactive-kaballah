@@ -30,6 +30,7 @@ export type SimpleSephirot = {
   regent: Regent & Theming<Regent>;
   sephirot: Sephirot & Theming<Sephirot>;
   planet: Planet & Theming;
+  className: string;
 };
 
 export type BiggerSephirot = {
@@ -37,6 +38,7 @@ export type BiggerSephirot = {
   regent: Regent & Theming<Regent>;
   sephirot: Sephirot & Theming<Sephirot>;
   planet: Planet & Theming<Planet>;
+  className: string;
 };
 
 export type SephirotProps<T extends 'simple' | 'bigger'> = T extends 'simple'

@@ -5,7 +5,8 @@ export const commonStyles = {
   strokeColor: 'white',
 };
 
-const kether = {
+export const kether = {
+  className: 'sephirot',
   world: {
     title: '',
     aspect: 'Onipresença',
@@ -36,7 +37,8 @@ const kether = {
   },
 };
 
-const chokmah = {
+export const chokma = {
+  className: 'sephirot',
   world: {
     title: 'Atziluth (mundo arquétipo)',
     aspect: 'Onipotência',
@@ -67,7 +69,8 @@ const chokmah = {
   },
 };
 
-const binah = {
+export const binah = {
+  className: 'sephirot',
   world: {
     title: 'Briah (Mundo Criativo)',
     aspect: 'Onisciência',
@@ -94,7 +97,8 @@ const binah = {
   },
 };
 
-const malkuth = {
+export const malkuth = {
+  className: 'sephirot',
   world: {
     title: 'Assiah (mundo material)',
     aspect: '',
@@ -126,11 +130,12 @@ const malkuth = {
 
 export const biggerSephirots: SephirotProps<'bigger'>[] = [
   kether,
-  chokmah,
+  chokma,
   binah,
 ];
 
-const yesod = {
+export const yesod = {
+  className: 'sephirot',
   regent: {
     title: 'Anjos - Gabriel',
     name: 'Shaddai El Chai',
@@ -155,7 +160,8 @@ const yesod = {
   },
 };
 
-const chesed = {
+export const chesed = {
+  className: 'sephirot',
   regent: {
     title: 'Arcanjo - Tzadkiel',
     name: 'El Elyon',
@@ -180,7 +186,8 @@ const chesed = {
   },
 };
 
-const gevurah = {
+export const gevurah = {
+  className: 'sephirot',
   regent: {
     title: 'Arcanjo - Camael',
     name: 'Elohim Gibor',
@@ -205,7 +212,8 @@ const gevurah = {
   },
 };
 
-const tiferet = {
+export const tiferet = {
+  className: 'sephirot',
   regent: {
     title: 'Arcanjo - Raphael',
     name: 'Tetragrammaton',
@@ -230,7 +238,8 @@ const tiferet = {
   },
 };
 
-const netzach = {
+export const netzach = {
+  className: 'sephirot',
   regent: {
     title: 'Arcanjo - Haniel',
     name: 'Elohim Tzabaoth',
@@ -255,7 +264,8 @@ const netzach = {
   },
 };
 
-const hod = {
+export const hod = {
+  className: 'sephirot',
   regent: {
     title: 'Arcanjo - Michael',
     name: 'Elohim Tzabaoth',

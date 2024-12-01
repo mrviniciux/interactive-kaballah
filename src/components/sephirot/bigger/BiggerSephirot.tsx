@@ -1,13 +1,14 @@
 import { SephirotProps } from '../Sephirot.types';
 
 function BiggerSephirot({
+  className = '',
   world,
   regent,
   sephirot,
   planet,
 }: SephirotProps<'bigger'>) {
   return (
-    <svg width="500px" height="500px">
+    <svg className={className} width="500px" height="500px">
       <defs>
         <path
           id="path-3"

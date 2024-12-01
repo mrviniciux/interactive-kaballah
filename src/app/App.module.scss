@@ -9,14 +9,16 @@
 
 .App {
   text-align: center;
+  min-width: 1006px;
 }
 
-.sefirot-container .sefirot-major {
-  border-radius: var(--border-radius);
-  border-color: black;
-  border-style: solid;
-  width: 35vw;
-  height: 35vw;
-  max-width: 35vh; 
-  max-height: 35vh;
+.App > .kether {
+  width: 100%;
+}
+
+.App > .binah-chokma,
+.App > .gevura-chesed,
+.App > .hod-netzach {
+  display: flex;
+  justify-content: space-between;
 }
