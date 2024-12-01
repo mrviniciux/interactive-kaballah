@@ -77,6 +77,7 @@ export const binah = {
   world: {
     title: 'Briah (Mundo Criativo)',
     aspect: 'Onisciência',
+    backgroundColor: 'rgb(217, 217, 217)',
     startOffset: { title: '10%', aspect: '28%' },
   },
   regent: {
