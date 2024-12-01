@@ -107,14 +107,12 @@ function BiggerSephirot({
       </ellipse>
       <text
         style={{
-          whiteSpace: 'pre',
           fill: planet.fontColor || 'white',
           fontFamily: 'Arial, sans-serif',
-          fontSize: '70px',
+          fontSize: '95px',
         }}
-        x="236"
-        y="277"
-        transform="matrix(1.835666, 0, 0, 1.510414, -218.867828, -146.72612)"
+        x={planet.coordinates?.icon?.x || '222'}
+        y={planet.coordinates?.icon?.y || '266'}
       >
         {planet.icon}
       </text>
@@ -123,11 +121,10 @@ function BiggerSephirot({
           whiteSpace: 'pre',
           fill: planet.fontColor || 'white',
           fontFamily: 'Arial, sans-serif',
-          fontSize: '20px',
+          fontSize: '30px',
         }}
-        x="250"
-        y="310"
-        transform="matrix(1.835666, 0, 0, 1.510414, -218.867828, -146.72612)"
+        x={planet.coordinates?.number?.x || '240'}
+        y={planet.coordinates?.number?.y || '320'}
       >
         {planet.number}
       </text>

@@ -24,6 +24,10 @@ type Sephirot = {
 type Planet = {
   icon?: string | ReactElement;
   number: number;
+  coordinates?: {
+    icon?: { x?: number; y?: number };
+    number?: { x?: number; y?: number };
+  };
 };
 
 export type SimpleSephirot = {
