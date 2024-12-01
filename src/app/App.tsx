@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Sephirot, { BiggerSephirot } from '../components/Sephirot';
 import PageUnderConstruction from '../components/UnderConstruction/UnderConstruction';
 import {
@@ -137,6 +137,28 @@ const App = () => {
     transform: `translate(${offset.x}px, ${offset.y}px) scale(${scale})`,
     transformOrigin: 'center',
   };
+
+  //avoid reload options on mobile
+  useEffect(() => {
+    const preventPullToRefresh = (event: TouchEvent) => {
+      if (event.touches.length > 1) return;
+
+      const startY = event.touches[0].clientY;
+      const isAtTop = window.scrollY === 0;
+
+      if (isAtTop && startY > 0) {
+        event.preventDefault();
+      }
+    };
+
+    document.addEventListener('touchmove', preventPullToRefresh, {
+      passive: false,
+    });
+
+    return () => {
+      document.removeEventListener('touchmove', preventPullToRefresh);
+    };
+  }, []);
 
   return (
     <>
