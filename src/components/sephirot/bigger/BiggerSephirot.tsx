@@ -8,7 +8,13 @@ function BiggerSephirot({
   planet,
 }: SephirotProps<'bigger'>) {
   return (
-    <svg className={className} width="500px" height="500px">
+    <svg
+      className={className}
+      width="10rem"
+      height="10rem"
+      viewBox="0 0 500 500"
+      preserveAspectRatio="xMidYMid meet"
+    >
       <defs>
         <path
           id="path-3"
