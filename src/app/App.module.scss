@@ -12,18 +12,18 @@
   min-width: 1006px;
 }
 
-.App > .kether,
-.App > .malkuth {
+.App .kether,
+.App .malkuth {
   width: 100%;
 }
 
-.App > .malkuth {
+.App .malkuth {
   padding-top: 8rem;
 }
 
-.App > .binah-chokma,
-.App > .gevura-chesed,
-.App > .hod-netzach {
+.App .binah-chokma,
+.App .gevura-chesed,
+.App .hod-netzach {
   display: flex;
   justify-content: space-evenly;
 }
