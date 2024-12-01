@@ -218,7 +218,7 @@ function BiggerSephirot({
       </text>
       <text
         style={{
-          fill: 'rgb(51, 51, 51)',
+          fill: world.fontColor || 'rgb(51, 51, 51)',
           fontFamily: 'Arial, sans-serif',
           fontSize: '18px',
           letterSpacing: '2.7px',

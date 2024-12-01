@@ -106,6 +106,7 @@ export const malkuth: BiggerSephirot = {
     title: 'Assiah (mundo material)',
     aspect: '',
     strokeColor: 'white',
+    fontColor: 'white',
     backgroundColor: 'url(#malkuth-world)',
     startOffset: { title: '10%', aspect: '28%' },
   },
@@ -123,6 +124,7 @@ export const malkuth: BiggerSephirot = {
     valor: 'Reino',
     backgroundColor: 'url(#malkuth-sephirot)',
     strokeColor: 'white',
+    fontColor: 'white',
     startOffset: { name: '8%', valor: '8%' },
   },
   planet: {
