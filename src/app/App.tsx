@@ -5,6 +5,7 @@ import {
   binah,
   chesed,
   chokma,
+  daath,
   gevurah,
   hod,
   kether,
@@ -178,6 +179,10 @@ const App = () => {
           <div className="binah-chokma">
             <BiggerSephirot {...binah} />
             <BiggerSephirot {...chokma} />
+          </div>
+
+          <div className="daath">
+            <Sephirot {...daath} />
           </div>
 
           <div className="gevura-chesed">

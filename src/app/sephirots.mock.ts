@@ -40,6 +40,35 @@ export const kether = {
   },
 };
 
+export const daath = {
+  className: 'sephirot',
+  world: {
+    title: '',
+    aspect: '',
+    backgroundColor: 'rgb(240 240 242)',
+  },
+  regent: {
+    title: '',
+    name: '',
+    defect: '',
+    ...commonStyles,
+    backgroundColor: 'rgb(178 179 183)',
+  },
+  sephirot: {
+    name: 'Daath',
+    valor: '',
+    backgroundColor: 'rgb(240 240 242)',
+    strokeColor: commonStyles.strokeColor,
+  },
+  planet: {
+    icon: '♇',
+    number: 11,
+    strokeColor: commonStyles.strokeColor,
+    fontColor: commonStyles.fontColor,
+    backgroundColor: 'rgb(178 179 183)',
+  },
+};
+
 export const chokma = {
   className: 'sephirot',
   world: {
