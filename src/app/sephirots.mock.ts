@@ -130,7 +130,7 @@ export const malkuth: BiggerSephirot = {
     number: 10,
     strokeColor: 'white',
     fontColor: commonStyles.fontColor,
-    backgroundColor: ';url(#malkuth-planet)',
+    backgroundColor: 'url(#malkuth-planet)',
     coordinates: {
       icon: {
         x: 210,
