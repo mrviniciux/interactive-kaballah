@@ -105,6 +105,8 @@ export const malkuth: BiggerSephirot = {
   world: {
     title: 'Assiah (mundo material)',
     aspect: '',
+    strokeColor: 'white',
+    backgroundColor: 'url(#malkuth-world)',
     startOffset: { title: '10%', aspect: '28%' },
   },
   regent: {
@@ -112,22 +114,23 @@ export const malkuth: BiggerSephirot = {
     name: 'Adonalha Aretz',
     defect: '',
     ...commonStyles,
-    backgroundColor: 'rgb(0, 255, 255)',
+    strokeColor: 'white',
+    backgroundColor: 'url(#malkuth-regent)',
     startOffset: { title: '50%' },
   },
   sephirot: {
     name: 'Malkuth',
     valor: 'Reino',
-    backgroundColor: 'rgb(200, 230, 250)',
-    strokeColor: commonStyles.strokeColor,
+    backgroundColor: 'url(#malkuth-sephirot)',
+    strokeColor: 'white',
     startOffset: { name: '8%', valor: '8%' },
   },
   planet: {
     icon: '⨁',
     number: 10,
-    strokeColor: commonStyles.strokeColor,
+    strokeColor: 'white',
     fontColor: commonStyles.fontColor,
-    backgroundColor: 'rgb(0, 255, 255)',
+    backgroundColor: ';url(#malkuth-planet)',
     coordinates: {
       icon: {
         x: 210,
@@ -178,13 +181,13 @@ export const chesed = {
     name: 'El Elyon',
     defect: 'Tirania',
     ...commonStyles,
-    backgroundColor: 'rgb(0, 255, 0)',
+    backgroundColor: 'rgb(46 46 135)',
     startOffset: { title: '30%' },
   },
   sephirot: {
     name: 'Chesed',
     valor: 'Misericórdia',
-    backgroundColor: 'rgb(200, 250, 200)',
+    backgroundColor: 'rgb(166 161 210)',
     strokeColor: commonStyles.strokeColor,
     startOffset: { name: '4%', valor: '4%' },
   },
@@ -193,7 +196,7 @@ export const chesed = {
     number: 4,
     strokeColor: commonStyles.strokeColor,
     fontColor: commonStyles.fontColor,
-    backgroundColor: 'rgb(0, 255, 0)',
+    backgroundColor: 'rgb(46 46 135)',
   },
 };
 
@@ -204,13 +207,13 @@ export const gevurah = {
     name: 'Elohim Gibor',
     defect: 'Crueldade',
     ...commonStyles,
-    backgroundColor: 'rgb(255, 0, 0)',
+    backgroundColor: 'rgb(228 29 31)',
     startOffset: { title: '35%' },
   },
   sephirot: {
     name: 'Gevurah',
     valor: 'Força',
-    backgroundColor: 'rgb(255, 180, 180)',
+    backgroundColor: 'rgb(245 179 156)',
     strokeColor: commonStyles.strokeColor,
     startOffset: { name: '5%', valor: '5%' },
   },
@@ -219,7 +222,7 @@ export const gevurah = {
     number: 5,
     strokeColor: commonStyles.strokeColor,
     fontColor: commonStyles.fontColor,
-    backgroundColor: 'rgb(255, 0, 0)',
+    backgroundColor: 'rgb(228 29 31)',
   },
 };
 
@@ -230,13 +233,13 @@ export const tiferet = {
     name: 'Tetragrammaton',
     defect: 'Hipocrisia',
     ...commonStyles,
-    backgroundColor: 'rgb(255, 255, 0)',
+    backgroundColor: 'rgb(254 239 2)',
     startOffset: { title: '40%' },
   },
   sephirot: {
     name: 'Tiferet',
     valor: 'Beleza',
-    backgroundColor: 'rgb(250, 250, 200)',
+    backgroundColor: 'rgb(254 248 183)',
     strokeColor: commonStyles.strokeColor,
     startOffset: { name: '6%', valor: '6%' },
   },
@@ -245,7 +248,7 @@ export const tiferet = {
     number: 6,
     strokeColor: commonStyles.strokeColor,
     fontColor: commonStyles.fontColor,
-    backgroundColor: 'rgb(255, 255, 0)',
+    backgroundColor: 'rgb(254 239 2)',
     coordinates: {
       icon: {
         x: 205,
@@ -264,13 +267,13 @@ export const netzach = {
     name: 'Elohim Tzabaoth',
     defect: 'Hedonismo',
     ...commonStyles,
-    backgroundColor: 'rgb(0, 0, 255)',
+    backgroundColor: 'rgb(1 152 72)',
     startOffset: { title: '45%' },
   },
   sephirot: {
     name: 'Netzach',
     valor: 'Eternidade',
-    backgroundColor: 'rgb(200, 200, 250)',
+    backgroundColor: 'rgb(169 212 180)',
     strokeColor: commonStyles.strokeColor,
     startOffset: { name: '7%', valor: '7%' },
   },
@@ -279,7 +282,7 @@ export const netzach = {
     number: 7,
     strokeColor: commonStyles.strokeColor,
     fontColor: commonStyles.fontColor,
-    backgroundColor: 'rgb(0, 0, 255)',
+    backgroundColor: 'rgb(1 152 72)',
     coordinates: {
       icon: {
         x: 215,
@@ -298,13 +301,13 @@ export const hod = {
     name: 'Elohim Tzabaoth',
     defect: 'Corrupção',
     ...commonStyles,
-    backgroundColor: 'rgb(0, 255, 255)',
+    backgroundColor: 'rgb(243 145 21)',
     startOffset: { title: '50%' },
   },
   sephirot: {
     name: 'Hod',
     valor: 'Glória',
-    backgroundColor: 'rgb(200, 230, 250)',
+    backgroundColor: 'rgb(254 212 169)',
     strokeColor: commonStyles.strokeColor,
     startOffset: { name: '8%', valor: '8%' },
   },
@@ -313,7 +316,7 @@ export const hod = {
     number: 8,
     strokeColor: commonStyles.strokeColor,
     fontColor: commonStyles.fontColor,
-    backgroundColor: 'rgb(0, 255, 255)',
+    backgroundColor: 'rgb(243 145 21)',
     coordinates: {
       number: {
         x: 242,

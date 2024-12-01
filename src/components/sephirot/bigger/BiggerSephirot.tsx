@@ -60,11 +60,66 @@ function BiggerSephirot({
           id="path-12"
           d="M -3.838 276.726 C 178.396 377.65 277.678 246.229 253.923 266.054"
         />
+        <pattern
+          id="malkuth-world"
+          patternUnits="objectBoundingBox"
+          height="1"
+          width="1"
+        >
+          <image
+            x="-130"
+            y="-128"
+            width="700"
+            height="700"
+            href="/malkuth.png"
+          ></image>
+        </pattern>
+        <pattern
+          id="malkuth-regent"
+          patternUnits="objectBoundingBox"
+          height="1"
+          width="1"
+        >
+          <image
+            x="-130"
+            y="-128"
+            width="600"
+            height="600"
+            href="/malkuth.png"
+          ></image>
+        </pattern>
+        <pattern
+          id="malkuth-sephirot"
+          patternUnits="objectBoundingBox"
+          height="1"
+          width="1"
+        >
+          <image
+            x="-75"
+            y="-73"
+            width="433"
+            height="433"
+            href="/malkuth.png"
+          ></image>
+        </pattern>
+        <pattern
+          id="malkuth-planet"
+          patternUnits="objectBoundingBox"
+          height="1"
+          width="1"
+        >
+          <image
+            x="-150"
+            y="-150"
+            width="500"
+            height="500"
+            href="/malkuth.png"
+          ></image>
+        </pattern>
       </defs>
       <ellipse
-        fill={world.backgroundColor || 'rgb(217, 217, 217)'}
-        strokeWidth="3px"
-        stroke="black"
+        fill={world.backgroundColor || 'rgb(73, 73, 73)'}
+        stroke={world.strokeColor || 'white'}
         cx="251.627"
         cy="250.432"
         rx="222"
