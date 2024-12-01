@@ -1,8 +1,18 @@
 import { SephirotProps } from './Sephirot.types';
 
-function Sephirot({ regent, sephirot, planet }: SephirotProps<'simple'>) {
+function Sephirot({
+  className,
+  regent,
+  sephirot,
+  planet,
+}: SephirotProps<'simple'>) {
   return (
-    <svg viewBox="0 0 500 500" width="500px" height="500px">
+    <svg
+      className={className}
+      viewBox="0 0 500 500"
+      width="500px"
+      height="500px"
+    >
       <ellipse
         style={{
           fill: regent.backgroundColor || 'rgb(216, 216, 216)',
