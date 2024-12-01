@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import Sephirot, { BiggerSephirot } from '../components/Sephirot';
+import Sephirot from '../components/Sephirot/Sephirot';
 import PageUnderConstruction from '../components/UnderConstruction/UnderConstruction';
 import {
   binah,
@@ -14,6 +14,7 @@ import {
   tiferet,
   yesod,
 } from './sephirots.mock';
+import BiggerSephirot from '../components/Sephirot/bigger/BiggerSephirot';
 
 const App = () => {
   const containerRef = useRef<HTMLDivElement>(null);
