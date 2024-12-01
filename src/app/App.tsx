@@ -9,7 +9,6 @@ import {
   kether,
   malkuth,
   netzach,
-  sephirots,
   tiferet,
   yesod,
 } from './sephirots.mock';

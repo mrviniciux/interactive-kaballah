@@ -1,4 +1,7 @@
-import { SephirotProps } from '../components/Sephirot/Sephirot.types';
+import {
+  BiggerSephirot,
+  SephirotProps,
+} from '../components/Sephirot/Sephirot.types';
 
 export const commonStyles = {
   fontColor: 'white',
@@ -97,7 +100,7 @@ export const binah = {
   },
 };
 
-export const malkuth = {
+export const malkuth: BiggerSephirot = {
   className: 'sephirot',
   world: {
     title: 'Assiah (mundo material)',
@@ -125,6 +128,14 @@ export const malkuth = {
     strokeColor: commonStyles.strokeColor,
     fontColor: commonStyles.fontColor,
     backgroundColor: 'rgb(0, 255, 255)',
+    coordinates: {
+      icon: {
+        x: 210,
+      },
+      number: {
+        x: 235,
+      },
+    },
   },
 };
 
@@ -235,6 +246,14 @@ export const tiferet = {
     strokeColor: commonStyles.strokeColor,
     fontColor: commonStyles.fontColor,
     backgroundColor: 'rgb(255, 255, 0)',
+    coordinates: {
+      icon: {
+        x: 205,
+      },
+      number: {
+        x: 242,
+      },
+    },
   },
 };
 
@@ -261,6 +280,14 @@ export const netzach = {
     strokeColor: commonStyles.strokeColor,
     fontColor: commonStyles.fontColor,
     backgroundColor: 'rgb(0, 0, 255)',
+    coordinates: {
+      icon: {
+        x: 215,
+      },
+      number: {
+        x: 243,
+      },
+    },
   },
 };
 
@@ -287,11 +314,15 @@ export const hod = {
     strokeColor: commonStyles.strokeColor,
     fontColor: commonStyles.fontColor,
     backgroundColor: 'rgb(0, 255, 255)',
+    coordinates: {
+      number: {
+        x: 242,
+      },
+    },
   },
 };
 
 export const sephirots: SephirotProps<'simple'>[] = [
-  malkuth,
   yesod,
   chesed,
   gevurah,
